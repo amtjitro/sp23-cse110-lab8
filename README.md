@@ -1,1 +1,6 @@
 # Lab 8 - Starter
+
+1. I would put my automated tests to run within a Github actions that runs whenever code is pushed. This is because when you push code to a repo, you want to make sure that it doesn't "break" anything and having all the automated tests run will help prevent any code from breaking. Technically, tests should probably also be run manually and locally, but overall they should definitely be run when code is pushed to the repo because you don't want to push broken code that someone has to fix before they can start on their part.
+2. No. End to end testing involves testing the UI and emulating a user therefore it would not be used to check if a function is outputting correctly.
+3. No. This feature does not seem like it is isolated enough as it seems it requires interaction with another component to be able to send and write a message to another user. Perhaps you could check what the message written is, but it'd be difficult to figure out if the message is getting sent with a unit test.
+4. Yes. This seems like an isolated feature that does interact without another component. This could easily be checked by just checking if the string is greater than 80 characters.
